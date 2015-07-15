@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="shortcut icon" href="{Favicon}">
+	
+		<!--- fonts --->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>
+	
+        
+        <!--- images --->
+    <meta name="image:Background" content="" />
+    <meta name="image:Sidebar" content="http://static.tumblr.com/xzqqn0j/at8nri2sq/size.png" />
+        
+        
+        <!--- links --->
+    <meta name="text:Link01Title" content="link 01" />
+    <meta name="text:Link01URL" content="http://link 01" />
+ 
+    <meta name="text:Link02Title" content="link 02" />
+    <meta name="text:Link02URL" content="http://link 02" />
+
+    <meta name="text:Link03Title" content="link 03" />
+    <meta name="text:Link03URL" content="http://link 03" />
+    
+
+        <!--- nav --->
+    <meta name="if:Navigation" content="1" />    
+    
+    <meta name="text:Navigation" content="navi" />
+
+    <meta name="text:SubLink01Title" content="sub link 01" />
+    <meta name="text:SubLink01URL" content="http://sub link 01" />
+ 
+    <meta name="text:SubLink02Title" content="sub link 02" />
+    <meta name="text:SubLink02URL" content="http://sub link 02" />
+
+    <meta name="text:SubLink03Title" content="sub link 03" />
+    <meta name="text:SubLink03URL" content="http://sub link 03" />
+    
+    
+        <!--- colors --->
+    <meta name="color:Background" content="#ffffff" />
+    <meta name="color:Text" content="#464646" />
+    <meta name="color:Links" content="#464646" />
+    <meta name="color:Bold" content="#464646" />
+    <meta name="color:Accent" content="#e6c55d" />
+    <meta name="color:Blockquote" content="#eaeaea" />
+    <meta name="color:HeaderBg" content="#171717" />
+    <meta name="color:HeaderText" content="#ffffff" />
+    <meta name="color:NaviHoverBg" content="#2e2e2e" />
+    <meta name="color:Tags" content="#737373" />
+    <meta name="color:ImageBorder" content="#f7f7f7" />
+    <meta name="color:Questions" content="#f5f5f5" />
+    
+    
+        <!--- search --->
+    <meta name="if:Search" content="1" />
+	
+<title>{Title}</title>	
+	
+</head>
+
+<style>
+
+    /******************************
+    T H E M E T H R E E
+    Author: Marissa
+    URL: http://annparkins.tumblr.com/
+    don't copy / don't claim as yours / don't use as base
+    ******************************/
+    
+    /*** BASIC ***/
+    body {
+        background: {color:Background} url('{image:Background}');
+        color: {color:Text};
+        font-family: arial;
+        font-size: 9px;
+        line-height: 17px;
+    }
+    
+    a, a:link, a:visited, a:active {
+        text-decoration: none;
+        color: {color:Links};
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+    }
+    
+    a:hover {
+        color: {color:Accent};
+    }
+    
+    b, bold, strong {
+        color: {color:Bold};
+    }
+    
+    blockquote {
+        margin-left: 10px;
+        border-left: 2px solid {color:Blockquote};
+        padding: 5px 0px 5px 10px;
+        font-family: arial;
+    }
+    
+    blockquote small {
+        font-size: 9px;
+    }
+    
+    blockquote small small {
+        font-size: 9px;
+    }
+    
+    blockquote sub {
+        font-size: 9px;
+    }
+    
+    blockquote sub sub {
+        font-size: 9px;
+    }
+    
+    .credit {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .credit a {
+        padding: 5px;
+        background: {color:HeaderBg};
+        color: {color:Background};
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 7px;
+        font-weight: 600;
+    }
+    
+    .credit a:hover {
+        color: {color:Accent};
+        background: {color:NaviHoverBg};
+    }
+    
+    
+    
+    /*** STRUCTURE ***/
+    #theme {
+        width: 800px;
+        text-align: justify;
+        margin-top: 70px;
+    }
+    
+    #sidebar {
+        width: 160px;
+        float: right;
+        margin-top: 20px;
+        display: block;
+    }
+    
+    #content {
+        width: 570px;
+        float: left;
+    }
+    
+    
+    
+    /*** HEADER ***/
+    #header {
+        width: 100%; 
+        height: 45px; 
+        display: block; 
+        top: 0px;
+        background: {color:HeaderBg}; 
+        position: fixed; 
+        z-index: 100;  
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 45px; 
+        color: {color:HeaderText}; 
+        text-transform: uppercase; 
+        padding: 0 150px;
+        left: -10px;
+    }
+
+    #header a {
+        color: {color:HeaderText};
+        padding: 0 20px; 
+    }
+    
+    #header a:hover {
+        color: {color:Accent};
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        display: none;
+        margin: 0;
+        list-style: none; /** Remove list bullets */
+        width: 100%; /** Set the width to 100% of it's parent */
+        padding: 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown button {
+        color: {color:HeaderText};
+        padding: 0 20px; 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 45px; 
+        background: {color:HeaderBg}; 
+        text-transform: uppercase; 
+        border: 0px;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+    }
+    
+    .dropdown button:hover {
+        color: {color:Accent};
+        cursor: pointer;
+    }
+
+    .dropdown a {
+        display: block;
+        padding: 0.2em 0.8em;
+        text-decoration: none;
+        background: {color:HeaderBg};
+        color: {color:HeaderText};
+        text-align: left;
+        min-width: 80px;
+    }
+
+    .dropdown a:hover {
+        background: {color:NaviHoverBg};
+    }
+    
+    .dropdown form {
+        background: {color:HeaderBg};
+        width: 200px;
+    }
+    
+    .dropdown form input {
+        background: {color:HeaderBg};
+        width: 180px;
+        color: {color:HeaderText};
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 10px;
+        padding: 10px 0;
+    }
+    
+    
+    
+    /*** PAGINATION ***/
+    .pagination {
+        width: 500px;
+        border-right: 1px solid;
+        font-size: 8px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 45px; 
+        color: {color:HeaderText}; 
+        margin-bottom: 50px;
+        line-height: 8px;
+        position: relative;
+        float: right;
+        margin-right: -6px;
+        margin-top: -50px;
+    }
+    
+    #left {
+        float: left;
+        width: 250px;
+    }
+    
+    #right {
+        float: right;
+        width: 250px;
+        text-align: right;
+    }
+    
+    #left a, #right a {
+        font-size: 8px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 8px;
+        letter-spacing: none;
+        color: {color:HeaderText};
+        background: {color:HeaderBg};
+        padding: 15px 15px 15px 15px;
+        border-bottom: 3px solid;
+        border-color: {color:Background};
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    #left a:hover, #right a:hover {
+        border-color: {color:Accent};
+        color: {color:Accent};
+    }
+    
+    
+    
+    /*** SIDEBAR ***/
+    .sd {
+        display: inline-block;
+        text-align: justify;
+        width: 160px;
+        position: fixed;
+    }
+    
+    img#sb {
+        width: 140px;
+        height: 140px;
+        border: 10px solid;
+        border-color: {color:ImageBorder};
+        margin-top: 4px;
+    }
+    
+    
+    
+    /*** POSTS ***/
+    .post {
+        width: 575px;
+        display: block;
+    }
+    
+    .space {
+        margin-bottom: 75px;
+        float: right;
+        width: 500px;
+        display: block;
+    }
+    
+    .infor {
+        font-size: 8px;
+        font-family: Arial;
+        width: 68px;
+        float: left;
+        display: block;
+        text-align: center;
+        line-height: 10px;
+        letter-spacing: 2px;
+        position: relative;
+    }
+    
+    .infor a {
+        color: {color:Tags};
+        margin: 0 3px;
+    }
+    
+    .infor a:hover {
+        color: {color:Accent};
+    }
+    
+    .tags i {
+        margin: 5px 0;
+        font-size: 9px;
+    }
+    
+    .infor .date {
+        font-size: 19px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 8px;
+        margin-top: 10px;
+        letter-spacing: none;
+    }
+    
+    .infor .month {
+        font-size: 7px;
+        text-align: center;
+        letter-spacing: 4px;
+        font-weight: 600;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+    }
+    
+    .tags {
+        display: inline-block;
+        border-top: 1px dotted;
+        border-color: {color:Blockquote};
+        width: 490px;
+        padding: 1px 5px 0px 5px;
+    }
+    
+    .tags a {
+        color: {color:Tags};
+        margin: -5px 5px;
+    }
+    
+    .tags a:hover {
+        text-decoration: underline;
+    }
+    
+    .notecount {
+        border-top: 1px solid;
+        border-color: {color:Blockquote};
+        padding: 2px 0px 0px 0px;
+        text-align: center;
+        display: block;
+        overflow: hidden;
+        margin-top: -3px;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    /*** TEXT ***/
+    h1 {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    
+    
+    
+    /*** ANSWER ***/
+    .question {
+        padding: 15px;
+        background: {color:Questions};
+        font-size: 8px;
+        text-transform: auto;
+        letter-spacing: 2px;
+        width: 470px;
+        color: {color:Text}46;
+        font-weight: 600;
+    }
+    
+    .arrow {
+        font-size: 35px; 
+        margin-top: -17px; 
+        display: block; 
+        color: {color:Questions};
+        z-index: 8;
+    }
+    
+    .asker, .asker a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: {color:HeaderBg};
+        font-weight: 600;
+        margin-top: -5px;
+        z-index: 999999;
+    }
+    
+    
+    
+    /*** QUOTE ***/
+    .quote {
+        padding: 15px;
+        color: {color:HeaderText};
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 470px;
+        background: {color:HeaderBg};
+        font-weight: 600;
+    }
+    
+    .arrow1 {
+        font-size: 35px; 
+        margin-top: -17px; 
+        display: block; 
+        color: {color:HeaderBg};
+    }
+    
+    
+    
+    /*** LINK ***/
+    a.url {
+        padding: 3px 5px 3px 5px;
+        color: {color:Background};
+        background: {color:Accent};
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    
+    
+    
+    /*** CHAT ***/
+    .chat li {
+        list-style-type: none;
+        border-radius: 0.2em;
+        margin: 1px;
+        padding: 2px 4px 2px 4px;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    ul.chat {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    li.odd {
+        font-style: bold;
+    }
+    
+    .chat .odd {
+        background: {color:Questions};
+        display: block;
+    }
+    
+    
+    
+    /*** AUDIO ***/
+    #music {
+        min-height: 60px;
+        display: block;
+        position: relative;
+        float: right;
+        width: 420px;
+    }
+    
+    #paudiobox {
+        width: 33px; 
+        background: {color:Background}; 
+        float: right; 
+        height: 33px; 
+        display: inline-block;
+        
+    }
+        
+    #paudioplay {
+        width: 27px; 
+        height: 27px; 
+        overflow: hidden; 
+        {block:Posts}{block:Audio}{block:AlbumArt}background: url('{AlbumArtURL}'){/block:AlbumArt};{/block:Audio}{/block:Posts} 
+        border: 5px solid {color:Questions};
+    }
+    
+    #paudiocont {
+        width: 440px; 
+        float: left; 
+        height: 33px; 
+        display: inline-block; 
+        text-transform: uppercase; 
+        font-size: 8px; 
+        letter-spacing: 1px;
+        text-align: right;
+        line-height: 15px;
+    }
+    
+    
+    
+    /*** NOTES ***/
+    div#postnotes li {
+        border-bottom: 1px dotted;
+        border-color: {color:Blockquote};
+        padding: 3px;
+        padding: 5px 4px 2px 4px;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 1px;
+        list-style-type: none;
+        margin-left: -40px;
+    }
+    
+    div#postnotes li img {
+        margin-right: 6px;
+        width: 8px;
+        height: 8px;
+    }
+    
+</style>
+
+
+<body><div class="credit"><a href="http://annperkins.tumblr.com/">theme</a></div>
+    
+    <div id="header">
+    
+        <a href="/">home</a>
+        <a href="/message">message</a>
+
+        {block:IfNavigation}<div class="dropdown">
+        <button>{text:Navigation}</button>
+        <ul class="dropdown-menu">
+        <li><a href="{text:SubLink01URL}" target="_blank">{text:SubLink01Title}</a></li>
+        <li><a href="{text:SubLink02URL}" target="_blank">{text:SubLink02Title}</a></li>
+        <li><a href="{text:SubLink03URL}" target="_blank">{text:SubLink03Title}</a></li>
+        </ul>
+        </div>{/block:IfNavigation}
+
+        <a href="{text:Link01URL}">{text:Link01Title}</a>
+        <a href="{text:Link02URL}">{text:Link02Title}</a>
+        <a href="{text:Link03URL}">{text:Link03Title}</a>
+
+        
+        {block:IfSearch}<div class="dropdown">
+        <button>SEARCH</button>
+        <ul class="dropdown-menu">
+        <li><form action="/search" method="get">
+    <input type="text" name="q" value="SAY SOMETHING (...)" /></form>></li>
+        </ul>
+        </div>{/block:IfSearch}
+        
+        </div>
+    
+    <center>
+        
+        <div id="theme">
+            
+            
+            <!------ SIDEBAR BEGINS ------>
+            <div id="sidebar">
+                <div class="sd">
+                    <img src="{image:Sidebar}" id="sb" />
+                    {block:Description}{Description}{/block:Description}
+                </div>
+            </div>
+            <!------ SIDEBAR ENDS ------>
+            
+            
+            <!------ CONTENT BEGINS ------>
+            <div id="content">
+                
+                
+                {block:Posts}<div class="post">
+                
+                <div class="space">
+                
+                {block:Text}
+                {block:Title}<h1> {Title}</h1>{/block:Title}
+                {Body}
+                {/block:Text}
+                
+                {block:Photo}
+                <img src="{PhotoURL-500}" width="500px" />
+                {block:Caption}<div class="box">{Caption}</div>{/block:Caption}
+                {/block:Photo}
+                
+                
+                {block:Photoset}
+                {Photoset-500}
+                {block:Caption}<div class="box">{Caption}</div>{/block:Caption}
+                {/block:Photoset}
+                
+                
+                {block:Answer}
+                <div class="box">
+                <div class="question">{Question}</div>
+                <center><div class="arrow"><i class="fa fa-caret-down"></i></div>
+                <div class="asker">{Asker}</div>
+                </center>
+                {Answer}
+                </div>
+                {/block:Answer}
+                
+                
+                {block:Quote}
+                <div class="quote">{Quote}</div>
+                {block:Source}<center><div class="arrow1"><i class="fa fa-caret-down"></i></div>
+                    <div class="asker">{Source}</div>{/block:Source}
+                {/block:Quote}
+                
+                
+                {block:Link}
+                <a href="{URL}" class="url">{Name}</a>
+                {block:Description}{Description}{/block:Description}
+                {/block:Link}
+            
+                {block:Chat}
+                <div class="chat">
+                <li class="chats">
+                            {block:Title}
+                                <h1><a href="{Permalink}">{Title}</a></h1>
+                            {/block:Title}
+    
+                            <ul class="chat">
+                                {block:Lines}
+                                    <li class="{Alt} user_{UserNumber}">
+                                        {block:Label}
+                                            <span class="label">{Label}</span>
+                                        {/block:Label}{Line}
+                                    </li>
+                                {/block:Lines}
+                            </ul>
+                </li>
+                </div>
+                {/block:Chat}
+                
+                
+                {block:Audio}
+                <div style="min-height: 50px;">
+                <div id="paudiobox">
+                <div id="paudioplay">{block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}</div>
+                </div>
+                <div id="paudiocont">
+                {block:PlayCount}{PlayCountWithLabel}{/block:PlayCount}<br>      {block:TrackName}{TrackName}{/block:TrackName} // {block:Artist}{Artist}{/block:Artist}
+                        </div>
+                </div>
+                {block:Caption}{Caption}{/block:Caption}
+                {/block:Audio}
+                
+                
+                {block:Video}
+                {Video-500}
+                {block:Caption}{Caption}{/block:Caption}
+                {/block:Video}
+                
+                
+                {block:HasTags}<div class="tags"><i class="fa fa-tag" id="margin"></i> {block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}</div>{/block:HasTags}
+                                                {block:PostNotes}<div id="postnotes">{PostNotes}</div><br><br>{/block:PostNotes}
+                </div>
+                <div class="infor">
+                    {block:Date}
+                    <div class="date">{DayOfMonthWithZero}</div>
+                    <div class="month">{ShortMonth}</div>
+                    {block:NoteCount}<div class="notecount"><a href="{Permalink}" class="button2">{NoteCountWithLabel}</a></div>
+                    {block:RebloggedFrom}<a href="{ReblogParentURL}" class="button2">via</a>{/block:RebloggedFrom}{block:ContentSource}<a href="{SourceURL}" >origin</a>{/block:ContentSource}
+                    {/block:NoteCount}
+                    {/block:Date}
+                </div>
+                </div>{/block:Posts}
+                
+                
+
+                    
+                    <div class="pagination">
+                <div id="left">
+                    {block:Pagination}{block:PreviousPage}<a href="{PreviousPage}"/>« prev</a>{/block:PreviousPage}{/block:Pagination}</div>
+
+                <div id="right">
+                    {block:Pagination}{block:NextPage}<a href="{NextPage}"/>next »</a>{/block:NextPage}{/block:Pagination}
+                </div>
+                        
+                    </div>
+            </div>
+            
+            <!------ CONTENT ENDS ------>
+            
+            
+        </div>
+        
+    </center>
+    
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
