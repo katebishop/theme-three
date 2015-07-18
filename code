@@ -448,7 +448,7 @@
         text-transform: auto;
         letter-spacing: 2px;
         width: 470px;
-        color: {color:Text}46;
+        color: {color:Text};
         font-weight: 600;
     }
     
